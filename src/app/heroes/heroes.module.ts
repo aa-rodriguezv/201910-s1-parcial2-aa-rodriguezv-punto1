@@ -10,4 +10,4 @@ import { HeroeService } from './heroe.service';
   declarations: [HeroesListComponent],
   providers: [HeroeService]
 })
-export class HeroeModule { }
+export class HeroesModule { }
