@@ -5,6 +5,7 @@ import { HeroeService } from './heroe.service';
 import {FormsModule} from '@angular/forms';
 import {BrowserModule} from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http';
+import { HeroeDetailComponent } from './heroe-detail/heroe-detail.component';
 
 @NgModule({
   imports: [
@@ -13,7 +14,7 @@ import {HttpClientModule} from '@angular/common/http';
     BrowserModule,
     HttpClientModule
   ],
-  declarations: [HeroesListComponent],
+  declarations: [HeroesListComponent, HeroeDetailComponent],
   providers: [HeroeService],
   exports: [HeroesListComponent]
 })

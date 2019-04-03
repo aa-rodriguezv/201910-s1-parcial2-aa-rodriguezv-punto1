@@ -18,6 +18,8 @@ export class HeroeService {
       return this.http.get<Heroe[]>(API_URL + HEROES_LIST);
   }
 
-  get
+  getHeroePorID(heroeID: number):Observable<HeroeDetail> {
+    return this.http.get<HeroeDetail>(API_URL + HEROE_DETAIL + heroeID + '.json');
+  }
 
 }
