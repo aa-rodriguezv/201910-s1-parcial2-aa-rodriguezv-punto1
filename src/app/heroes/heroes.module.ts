@@ -10,8 +10,11 @@ import {HttpClientModule} from '@angular/common/http';
   imports: [
     CommonModule,
     FormsModule,
+    BrowserModule,
+    HttpClientModule
   ],
   declarations: [HeroesListComponent],
-  providers: [HeroeService]
+  providers: [HeroeService],
+  exports: [HeroesListComponent]
 })
 export class HeroesModule { }
