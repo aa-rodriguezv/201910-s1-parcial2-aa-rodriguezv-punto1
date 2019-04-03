@@ -5,9 +5,10 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import {HeroesModule} from './heroes/heroes.module';
+import {AppRoutingModule} from './app-routing/app-routing.module';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, HttpClientModule, HeroesModule],
+  imports:      [ BrowserModule, FormsModule, HttpClientModule, HeroesModule, AppRoutingModule],
   declarations: [ AppComponent, HeaderComponent ],
   bootstrap:    [ AppComponent ]
 })
