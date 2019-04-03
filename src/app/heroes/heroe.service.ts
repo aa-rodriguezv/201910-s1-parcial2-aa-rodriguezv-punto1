@@ -3,7 +3,7 @@ import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Heroe } from './heroe';
 
-const API_URL = './../assets';
+const API_URL = './../assets/';
 const HEROES_LIST = 'heroes.json'; 
 
 @Injectable()
